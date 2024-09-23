@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LG하이케어솔루션 모작</title>
+
+<!-- 모바일 환경에 맞게 화면을 구축해준다. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- AOS 불러오기 -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<!-- 테일윈드 불러오기 -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- 스와이퍼 불러오기 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<!-- 공통 js 연결 -->
+<script defer src="script/script.js"></script>
+
+<!-- 공통css연결 -->
+<link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+
+
+<!-- 탑바구현 시작 -->
+<header class="top-bar">
+<nav class="top-bar-wrap h-full mx-auto">
+  <div class="top-bar__top h-[79px]">
+    <div class="logo-box h-full flex items-center">
+      <a href="#" class="logo">
+        <img src="https://hi-caresolution.com/img/common/lg_hicare.svg" alt="하이케어솔루션">
+      </a>
+      <div class="lgLink ml-auto">
+        <a href="https://www.lge.co.kr/" target="_blank">
+          LG전자 바로가기
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-bar__bottom h-[69px] flex">
+    <nav class="top-bar__menu-box flex items-center">
+      <ul class="flex h-full">
+        <li>
+          <a href="#">회사소개</a>
+          <div class="mega-menu-2">
+            <div class="mx-auto">
+              <ul class="flex mt-[20px]">
+                <li>
+                  <a href="#">
+                    기업정보
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    연혁
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    경영정보
+                    <span class="mr-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                  <ul>
+                    <li><a href="#">재무정보</a></li>
+                    <li><a href="#">공고</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">LG가전구독</a>
+          <div class="mega-menu-2">
+            <div class="mx-auto">
+              <ul class="flex mt-[20px]">
+                <li>
+                  <a href="#">
+                    구독(케어)소개
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    제품
+                    <span><i class="fa-solid fa-up-right-from-square"></i></span>
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                  <ul>
+                    <li><a href="#">주방가전</a></li>
+                    <li><a href="#">생활가전</a></li>
+                    <li><a href="#">에어케어</a></li>
+                    <li><a href="#">TV</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    서비스
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                  <div class="text-over flex">
+                    <ul>
+                      <li><a href="#">정수기</a></li>
+                      <li><a href="#">얼음정수기냉장고</a></li>
+                      <li><a href="#">공기청정기</a></li>
+                      <li><a href="#">에어로타워</a></li>
+                      <li><a href="#">에어로퍼니처</a></li>
+                      <li><a href="#">에어컨</a></li>
+                      <li><a href="#">전자레인지</a></li>
+                      <li><a href="#">식기세척기</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">워시타워</a></li>
+                      <li><a href="#">세탁기</a></li>
+                      <li><a href="#">의료건조기</a></li>
+                      <li><a href="#">스타일러</a></li>
+                      <li><a href="#">청소기</a></li>
+                      <li><a href="#">안마의자</a></li>
+                      <li><a href="#">식물생활가전</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    가전구독상담신청
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="#">
+            1회성 유상 서비스
+            <span class="mx-[5px]"><i class="fa-solid fa-up-right-from-square"></i></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">고객지원</a>
+          <div class="mega-menu-2">
+            <div class="mx-auto">
+              <ul class="flex mt-[20px]">
+                <li>
+                  <a href="#">
+                    가전구독혜택
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                  <ul>
+                    <li><a href="#">고객혜택</a></li>
+                    <li><a href="#">연차별 혜택</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    제품 사용 팁
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    이벤트
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    공지사항
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">인재채용</a>
+          <div class="mega-menu-2">
+            <div class="mx-auto">
+              <ul class="flex mt-[20px]">
+                <li>
+                  <a href="#">
+                    인재상
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    인사제도
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    채용절차
+                    <span class="mx-[5px]"><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 서브메뉴 -->
+    <div class="sub-menu flex h-full items-center">
+      <ul>
+        <li class="care-menger-box"><a href="#">케어매니저</a></li>
+      </ul>
+      <div class="care-menger__drop-down-menu">
+        <ul>
+          <li><a href="#">매니저 소개</a></li>
+          <li><a href="#">모집상담신청</a></li>
+        </ul>
+      </div>
+      <li class="full-menu">
+        <a href="#">
+          <span class="mx-[5px]"><i class="fa-solid fa-bars"></i></span>
+          전체메뉴
+        </a>
+      </li>
+    </div>
+</nav>
+</div>
+</nav>
+</header>
+
+<!-- 	히든메뉴 구현시작 -->
+<div class="hidden-menu-box">
+<div class="hidden-menu-box__content">
+  <div class="menu-box">
+    <button class="close-button">
+      <img src="https://hi-caresolution.com/img/common/close.png" alt="닫기 버튼">
+    </button>
+    <div class="pc-hidden-menu">
+      <div class="hidden-menu">
+        <ul class="hidden-menu hidden-menu-1">
+          <li class="flex">
+            <a href="#">회사소개</a>
+            <ul class="hidden-menu hidden-menu-2 flex">
+              <li><a href="#">기업정보</a></li>
+              <li><a href="#">연혁</a></li>
+              <li>
+                <a href="#">경영정보</a>
+                <ul class="hidden-menu hidden-menu-3">
+                  <li><a href="#">재무정보</a></li>
+                  <li><a href="#">공고</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="flex pb-[60px]">
+            <a href="#">LG가전구독</a>
+            <ul class="hidden-menu hidden-menu-2 flex">
+              <li><a href="#">구독(케어)소개</a></li>
+              <li class="wide wide-1">
+                <a href="#">
+                  제품
+                  <span class="ml-[5px]">
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </span>
+                </a>
+                <ul class="hidden-menu hidden-menu-3">
+                  <li><a href="#">주방가전</a></li>
+                  <li><a href="#">생활가전</a></li>
+                  <li><a href="#">에어케어</a></li>
+                  <li><a href="#">TV</a></li>
+                </ul>
+              </li>
+              <li class="wide wide-2">
+                <a href="#">서비스</a>
+                <ul class="hidden-menu hidden-menu-3">
+                  <li><a href="#">정수기</a></li>
+                  <li><a href="#">얼음정수기냉장고</a></li>
+                  <li><a href="#">공기청정기</a></li>
+                  <li><a href="#">에어로타워</a></li>
+                  <li><a href="#">에어로퍼니처</a></li>
+                  <li><a href="#">에어컨</a></li>
+                  <li><a href="#">전기레인지</a></li>
+                  <li><a href="#">식기세척기</a></li>
+                  <li><a href="#">워시타워</a></li>
+                  <li><a href="#">세탁기</a></li>
+                  <li><a href="#">의료건조기</a></li>
+                  <li><a href="#">스타일러</a></li>
+                  <li><a href="#">청소기</a></li>
+                  <li><a href="#">안마의자</a></li>
+                  <li><a href="#">식물생활가전</a></li>
+                </ul>
+              </li>
+              <li><a href="#">가전구독상담신청</a></li>
+            </ul>
+          </li>
+
+          <li class="flex">
+            <a href="#">고객지원</a>
+            <ul class="hidden-menu hidden-menu-2 flex">
+              <li>
+                <a href="#">가전구독 혜택</a>
+                <ul class="hidden-menu hidden-menu-3">
+                  <li><a href="#">고객혜택</a></li>
+                  <li><a href="#">연차별 혜택</a></li>
+                </ul>
+              </li>
+              <li><a href="#">제품 사용 팁</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </li>
+          <li class="flex">
+            <a href="#">
+              1회성 유상 서비스
+              <span class="ml-[5px]"><i class="fa-solid fa-up-right-from-square"></i></span>
+            </a>
+          </li>
+          <li class="flex">
+            <a href="#">인재채용</a>
+            <ul class="hidden-menu hidden-menu-2 flex">
+              <li><a href="#">인재상</a></li>
+              <li><a href="#">인사제도</a></li>
+              <li><a href="#">채용절차</a></li>
+            </ul>
+          </li>
+          <li class="flex">
+            <a href="#">케어매니저</a>
+            <ul class="hidden-menu hidden-menu-2 flex">
+              <li><a href="#">매니저 소개</a></li>
+              <li><a href="#">모집상담신청</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mobile-hidden-menu-box">
+      <div class="lgLink">
+        <a href="https://www.lge.co.kr/">
+          LG전자 바로가기
+          <span><i class="fa-solid fa-up-right-from-square"></i></span>
+        </a>
+      </div>
+      <div class="mobile-hidden-menu">
+        <ul class="hidden-menu hidden-menu-1">
+          <li>
+            <a href="#">
+              회사소개
+              <span class="icon-angle"></span>
+            </a>
+            <ul class="hidden-menu hidden-menu-2">
+              <li><a href="#">기업정보</a></li>
+              <li><a href="#">연혁</a></li>
+              <li>
+                <a href="#">경영정보</a>
+                <ul class="hidden-menu hidden-menu-3">
+                  <li><a href="#">재무정보</a></li>
+                  <li><a href="#">공고</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              LG가전구독
+              <span class="icon-angle"></span>
+            </a>
+
+            <ul class="hidden-menu hidden-menu-2">
+              <li><a href="#">구독(케어)소개</a></li>
+              <li>
+                <a href="#">
+                  제품
+                  <span class="ml-[5px]"><i class="fa-solid fa-up-right-from-square"></i></span>
+                </a>
+                <ul class="hidden-menu hidden-menu-3">
+                  <li><a href="#">주방가전</a></li>
+                  <li><a href="#">생활가전</a></li>
+                  <li><a href="#">에어케어</a></li>
+                  <li><a href="#">TV</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">서비스</a>
+                <ul class="hidden-menu hidden-menu-3">
+                  <li><a href="#">정수기</a></li>
+                  <li><a href="#">얼음정수기냉장고</a></li>
+                  <li><a href="#">공기청정기</a></li>
+                  <li><a href="#">에어로타워</a></li>
+                  <li><a href="#">에어로퍼니처</a></li>
+                  <li><a href="#">에어컨</a></li>
+                  <li><a href="#">전기레인지</a></li>
+                  <li><a href="#">식기세척기</a></li>
+                  <li><a href="#">워시타워</a></li>
+                  <li><a href="#">세탁기</a></li>
+                  <li><a href="#">의료건조기</a></li>
+                  <li><a href="#">스타일러</a></li>
+                  <li><a href="#">청소기</a></li>
+                  <li><a href="#">안마의자</a></li>
+                  <li><a href="#">식물생활가전</a></li>
+                </ul>
+              </li>
+              <li><a href="#">가전구독상담신청</a></li>
+            </ul>
+
+          </li>
+
+          <li>
+            <a href="#">
+              고객지원
+              <span class="icon-angle"></span>
+            </a>
+            <ul class="hidden-menu hidden-menu-2">
+              <li>
+                <a href="#">가전구독 혜택</a>
+                <ul class="hidden-menu hidden-menu-3">
+                  <li><a href="#">고객혜택</a></li>
+                  <li><a href="#">연차별 혜택</a></li>
+                </ul>
+              </li>
+              <li><a href="#">제품 사용 팁</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              1회성 유상 서비스
+              <div class="text-[15px] absolute ml-[42%] mt-[-26px]">
+                <span><i class="fa-solid fa-up-right-from-square"></i></span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              인재채용
+              <span class="icon-angle"></span>
+            </a>
+            <ul class="hidden-menu hidden-menu-2">
+              <li><a href="#">인재상</a></li>
+              <li><a href="#">인사제도</a></li>
+              <li><a href="#">채용절차</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              케어매니저
+              <span class="icon-angle"></span>
+            </a>
+            <ul class="hidden-menu hidden-menu-2">
+              <li><a href="#">매니저 소개</a></li>
+              <li><a href="#">모집상담신청</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="floating">
+<button class="top">
+  <img src="https://hi-caresolution.com/img/common/top.png" alt="위로">
+</button>
+</div>
+<!-- 		main-banner video 구현시작 -->
+<section class="main-section-banner">
+<div class="video">
+  <video src="https://hi-caresolution.com/img/main/main.mp4" autoplay loop muted></video>
+</div>
+</section>
+
+<!-- 배너구현 시작 -->
+<div class="main-banner">
+<section class="main-banner__banner">
+  <div class="inner">
+
+    <ul class="flex-grid">
+      <li data-aos="zoom-in" data-aos-duration="1000">
+        <a href="#" class="icon">
+          <img class="block w-full" src="https://hi-caresolution.com/img/main/banner_icon01.png" alt="케어서비스 소개">
+        </a>
+        <p>케어서비스 소개</p>
+      </li>
+
+      <li data-aos="zoom-in" data-aos-duration="1000">
+        <a href="#" class="icon">
+          <img class="block w-full" src="https://hi-caresolution.com/img/main/banner_icon02.png" alt="LG가전구독 상담 신청">
+        </a>
+        <p>LG가전구독 상담 신청</p>
+      </li>
+      <li data-aos="zoom-in" data-aos-duration="1000">
+        <a href="#" class="icon">
+          <img class="block w-full" src="https://hi-caresolution.com/img/main/banner_icon03.png" alt="케어매니저 소개">
+        </a>
+        <p>케어매니저 소개</p>
+      </li>
+      <li data-aos="zoom-in" data-aos-duration="1000">
+        <a href="#" class="icon">
+          <img class="block w-full" src="https://hi-caresolution.com/img/main/banner_icon04.png" alt="케어매니저 모집 상담 신청">
+        </a>
+        <p>케어매니저 모집 상담 신청</p>
+      </li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<!-- 서비스 배너구현 시작 -->
+<section class="main-banner__service-banner">
+<div class="service-banner-wrap">
+  <div class="text-box">
+    <div class="tittle-box">
+      <span data-aos="fade-right" data-aos-duration="1500">CARE SERVICE</span>
+      <h2 data-aos="fade-right" data-aos-duration="1500">
+        LG전가 가전 케어 전문가의
+        <br>
+        차원이 다른 서비스
+      </h2>
+      <p data-aos="fade-right" data-aos-duration="1500">
+        제품의 성능을 오래 유지하고 깨끗하게 사용할 수 있도록 가전 케어 전문가가
+        <br>
+        꼼꼼하게 관리해 드립니다.
+      </p>
+      <a href="#" data-aos="fade-right" data-aos-duration="1500">
+        더 자세히 보기
+      </a>
+    </div>
+  </div>
+  <div class="service-banner-img-box" data-aos="fade-left" data-aos-duration="1000">
+    <a href="#" class="service-banner-wrap">
+      <img src="https://hi-caresolution.com/img/main/service_img01.jpg" alt="케어서비스 이미지">
+    </a>
+  </div>
+</div>
+
+<div class="product-img-box">
+  <div class="product-wrap">
+    <div class="swiper" data-aos="fade-up" data-aos-duration="1000">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img12.jpg" alt="식물생활가전">
+          </a>
+          <p>식물생활가전</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img01.jpg" alt="정수기">
+          </a>
+          <p>정수기</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img02.jpg" alt="얼음정수기냉장고">
+          </a>
+          <p>얼음정수기냉장고</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img03.jpg" alt="공기청정기">
+          </a>
+          <p>공기청정기</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img04.jpg" alt="에어로타워">
+          </a>
+          <p>에어로타워</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img05.jpg" alt="에어로퍼니처">
+          </a>
+          <p>에어로퍼니처</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product01.jpg" alt="에어컨">
+          </a>
+          <p>에어컨</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img06.jpg" alt="전자레인지">
+          </a>
+          <p>전자레인지</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img07.jpg" alt="식기세척기">
+          </a>
+          <p>식기세척기</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img08.jpg" alt="워시타워">
+          </a>
+          <p>워시타워</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product02.jpg" alt="세탁기">
+          </a>
+          <p>세탁기</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img09.jpg" alt="의류건조기">
+          </a>
+          <p>의류건조기</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img10.jpg" alt="스타일러">
+          </a>
+          <p>스타일러</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product03.jpg" alt="청소기">
+          </a>
+          <p>청소기</p>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img src="https://hi-caresolution.com/img/main/product_img11.jpg" alt="안마의자">
+          </a>
+          <p>안마의자</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide-box">
+      <div class="swiper-pagination-box">
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-button-group">
+        <div class="swiper-button swiper-button__prev">
+          <span><i class="fa-solid fa-angle-left"></i></span>
+        </div>
+        <div class="swiper-button swiper-button__next">
+          <span><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 케어매니저 배너구현 시작 -->
+<section class="care-manager-banner">
+<div class="care-banner-wrap">
+  <div class="service-banner-img-box" data-aos="fade-right" data-aos-duration="1000">
+    <a href="#" class="service-banner-wrap">
+      <img src="https://hi-caresolution.com/img/main/manage_img01.jpg" alt="케어매니저 이미지">
+    </a>
+  </div>
+  <div class="text-box">
+    <div class="tittle-box">
+      <span data-aos="fade-left" data-aos-duration="1500">CARE MANAGER</span>
+      <h2 data-aos="fade-left" data-aos-duration="1500">
+        케어매니저
+      </h2>
+      <p data-aos="fade-left" data-aos-duration="1500">
+        가전케어 전문가의 손길로
+        <br>
+        고객 감동을 선사하는 케어매니저
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 마지막배너 구현_career -->
+<section class="main-banner__career-banner">
+<div class="career-banner-wrap">
+  <div class="text-box">
+    <div class="title-box">
+      <span data-aos="fade-right" data-aos-duration="1500">CAREER</span>
+      <h2 data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500">
+        하이케어솔루션과 함께 할
+        <br>
+        여러분을 기다립니다
+      </h2>
+      <p data-aos="fade-right" data-aos-delay="400" data-aos-duration="1500">
+        하이케어솔루션은 꿈과 열정을 가지고 도전할 인재를
+        <br>
+        기다립니다.
+      </p>
+    </div>
+  </div>
+  <div class="career-banner__list-box">
+    <ul data-aos="zoom-in" data-aos-duration="1500">
+      <li class="career-box career-box-1">
+        <p>
+          인재상
+          <span></span>
+        </p>
+        <div class="career-img career-img-1">
+          <img src="https://hi-caresolution.com/img/main/career_img01.png" alt="인재상">
+          <img src="https://hi-caresolution.com/img/main/career_img01_hover.png" alt="인재상">
+        </div>
+        <a href="#" class="career__content"></a>
+      </li>
+      <li class="career-box career-box-2">
+        <p>
+          인사제도
+          <span></span>
+        </p>
+        <div class="career-img career-img-2">
+          <img src="https://hi-caresolution.com/img/main/career_img02.png" alt="인사제도">
+          <img src="https://hi-caresolution.com/img/main/career_img02_hover.png" alt="인사제도">
+        </div>
+        <a href="#" class="career__content"></a>
+      </li>
+      <li class="career-box career-box-3">
+        <p>
+          채용절차
+          <span></span>
+        </p>
+        <div class="career-img career-img-3">
+          <img src="https://hi-caresolution.com/img/main/career_img03.png" alt="채용절차">
+          <img src="https://hi-caresolution.com/img/main/career_img03_hover.png" alt="채용절차">
+        </div>
+        <a href="#" class="career__content"></a>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!--  footer 구현  -->
+<div class="footer">
+<div class="footer-box">
+  <div class="footer-logo">
+    <a href="#">
+      <img src="https://hi-caresolution.com/img/common/footer_logo2.svg" alt="로고이미지">
+    </a>
+  </div>
+  <div class="footer-text">
+    <div class="footer-half">
+      <ul class="policy">
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">영상처리정보기기운영관리방침</a></li>
+        <li><a href="#">이메일무단수집거부</a></li>
+      </ul>
+      <ul class="info">
+        <li>
+          <p>회사명: 하이케어솔루션주식회사</p>
+          <span> | </span>
+          <p>대표이사: 임명준</p>
+        </li>
+        <li>
+          <p>사업자등록번호: 460-81-02233</p>
+          <span> | </span>
+          <p> 주소 : 서울특별시 강서구 마곡중앙5로 18(마곡동)</p>
+        </li>
+        <li class="bold">
+          <p>구독/서비스 문의: 1544-7777</p>
+          <span> | </span>
+          <p> 대표 이메일: caresolution@hi-caresolution.com</p>
+        </li>
+      </ul>
+      <ul class="copyright">
+        <li>
+          Copyright @ Hi-Caresolution Co., Ltd. All Right Reserved.
+        </li>
+        <li>
+          본 사이트의 모든 컨텐츠는 저작권법의 보호를 받는 바, 무단 전재, 복사, 배포 등을 금합니다.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
